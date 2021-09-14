@@ -1,0 +1,331 @@
+
+body,h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Work Sans',sans-serif;
+}
+
+.common-title{
+    text-align: center;
+    margin: 25px 0px;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.logo img{
+    width:36px;
+}
+
+/* banner */
+
+.banner{
+    background: url(image/banner.jpeg) no-repeat center center ;
+    background-size: cover;
+    padding: 180px 0px;
+    position: relative;
+    z-index: 1;
+
+}
+.banner::after{
+    content: "";
+    background: rgba(0, 0, 0, 0.384);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+
+}
+.my-banner h2{
+    font-size: 50px;
+    padding: 35px 0px ;
+}
+.my-banner h4{
+    font-size: 25px;
+}
+
+.my-banner input{
+    padding: 15px 20px ;
+    border-radius: 5px;
+}
+.my-banner button{
+    padding: 11px 20px;
+   
+    font-weight: 600;
+    font-size: 22px;
+    background-color: #5ba533;
+    border-color: #5ba533;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.my-banner button:hover{
+    color: #6278DF;
+    box-shadow: 0px 0px 10px 2px #6278DF;
+    background: #fff;
+}
+/* counter -section */
+.counter-section .mydisplay{
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* about-me section */
+.about-me .card{
+    border: 0px;
+}
+
+.about-me .card-body h2{
+    margin-top: 7rem!important;
+    font-size: 42px;
+    margin: 19px 0px;
+
+}
+
+.mylead {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* feature-section */
+.feacture-item{
+    height: 220px;
+    box-shadow: 4px 4px 10px 0px #ddd;
+    margin-top: 21px;
+}
+.feacture-item .left-img-sec{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+.feacture-item .left-img-sec img{
+    
+height: 100%;
+    
+width: auto;
+    
+position: relative;
+    
+left: -69px;
+    
+max-width: inherit;
+}
+
+.feacture-item .left-img-sec .myIamge
+{
+    height: 100%;
+    
+width: auto;
+    
+position: relative;
+    
+left: -20px;
+    
+max-width: inherit;
+}
+
+.feacture-item .left-text-sec{
+    width: 60%;
+    padding: 18px;
+}
+.feacture-item .left-text-sec h4{
+   font-size: 22px;
+}
+.feacture-item .left-text-sec p{
+   font-size: 14px;
+}
+/* grid-section */
+.grid-image{
+    margin-top: 30px;
+    position: relative;
+   
+}
+
+.grid-image::after{
+    content: "";
+    background: #696EAA;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  
+    opacity:0;
+    visibility: hidden;
+   
+}
+
+.grid-image:hover::after{
+    opacity: .7;
+    visibility: visible;
+    transition: .3s;
+
+}
+
+
+/* pricing-table */
+
+    .table{
+      
+    width: 100%;
+      
+    padding: 21px;
+      
+    display: inline-block;
+      
+    overflow: overlay;
+      
+    box-sizing: border-box;
+    }
+    
+    .table ul {
+        list-style: none;
+    }
+    .table ul li{}
+    .table ul li span{
+        line-height: 2.5;
+        font-size: 20px;
+        color: #909089;
+        font-weight: 300;
+    }
+    .table ul li span::before{
+        content: "\f00c";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        padding-right: 10px;
+        color: #6278df;
+    }
+    .table ul li span.cross::before{
+        content: "\f00d";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        padding-right: 12px;
+        color: #6278df;
+    }
+    .table-content{
+        /* width: 30%; */
+        border: 1px solid #ddd;
+        display: inline-block;
+        margin: 15px;
+        padding-bottom: 50px;
+        box-shadow: 1px 1px 11px 1px #ddd;
+        border-radius:10px;
+        height: 522px;
+    }
+    .table-content .price-btn {
+        background: #fff;
+        color: blue;
+        padding: 14px 73px;
+        display: block;
+        margin: 0 39px;
+        text-align: center;
+        box-shadow: 1px 2px 3px 1px #ddd;
+        border-radius: 6px;
+        font-size: 20px;
+        font-weight: 600;
+        word-spacing: 1.1;
+        display: inline-block;
+        word-spacing: 1.3px;
+        position: relative;
+        z-index: 1;
+        transition: .2s;
+        text-decoration: none;
+        margin-left: 77px;
+    }
+    
+    .table-content:hover a{
+        background: #6278df;
+        color: #fff;
+    }
+    .price-btn:hover::after{
+        content: "";
+        background: #000;
+        color: #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        z-index: -1;
+        border-radius:6px;
+    }
+    .table-title {
+        padding: 25px 65px 0px;
+    }
+    .table-title h6 {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    /* user-section */
+
+    .user-section .user{
+        margin-top: 19px;
+        /* margin-left: 45px; */
+    }
+    .user-section .user img{
+        border-radius: 50%;
+        width: 83px;
+        display: inline-block;
+        /* float: left; */
+        /* text-align: end; */
+        margin-left: 41px;
+    }
+    .user-section .user .name{
+        /* position: relative; */
+        display: inline-block;
+        position: relative;
+        top: 23px;
+        left: 16px;
+        }
+    
+     .user-section .user .name h2{
+        font-weight: 500;
+        font-size: 28px;
+    }
+    .user-section .user .name h3{
+        font-weight: 400;
+        text-align: left;
+        font-size: 20px;
+    }
+    
+    .user-section .text-muted{
+        font-size: 20px;
+        padding: 0px 161px;
+        font-weight: 300;
+    }
+
+    .user-section span.my-icon {
+        font-size: 71px;
+        color: gray;
+        opacity: .5;
+        padding: 0;
+        margin: 0;
+    }
+
+.blog-image img {
+    width: 100px;
+    border-radius: 50%;
+    margin-top: -50px;
+}
+
+    .contact-section .myDiv{
+        width: 600px;
+        margin: auto;
+        
+        padding: 5px;
+        text-align: center;
+       box-shadow:1px 1px 10px 0px #ddd;
+    }
+
+
+    .myPadMar{
+        padding: 10px 9px;
+        margin: 10px 0px;
+    }
